@@ -6,10 +6,17 @@ public class Q3_AverageDemo {
     System.out.println("The average is: " + calculateAverage(valuesArray));
   }
 
-  //method that calculates the average of the numbers in an array
+  
   public static double calculateAverage(double[] values){
     double result;
-    //your code here
+    result=0;
+    int count;
+    count=0;
+    for (double v:values){
+        result=result+v;
+        count=count+1;
+    }
+    result=result/count;
     return result;
   }
 }
